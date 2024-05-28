@@ -1,0 +1,183 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Encabezado y navegación */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+    height: 60px;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-horizontal {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu-horizontal li {
+    margin: 0 10px;
+    position: relative;
+}
+
+.menu-horizontal li a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.menu-horizontal li a:hover {
+    color: #0066cc;
+}
+
+.menu-horizontal li:hover > ul {
+    display: block;
+}
+
+.menu-vertical {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+.menu-vertical li {
+    display: block;
+}
+
+.menu-vertical li a {
+    padding: 10px 15px;
+}
+
+/* Sección de productos */
+.productos {
+    padding: 60px 0;
+}
+
+.productos h2 {
+    font-size: 80px;
+    margin-bottom: 20px;
+    color: #5d6060;
+    text-align: center;
+}
+
+.productos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.producto-item {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 calc(33.333% - 40px);
+    box-sizing: border-box;
+    max-width: calc(33.333% - 40px);
+}
+
+.producto-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.producto-item h3 {
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+.producto-item p {
+    font-size: 1em;
+    color: #666;
+}
+
+.producto-item .precio {
+    font-size: 1.2em;
+    color: #007BFF;
+    margin: 10px 0;
+}
+
+.producto-item button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.producto-item button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #007BFF;
+}

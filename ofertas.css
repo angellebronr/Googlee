@@ -1,0 +1,211 @@
+/* Estilos generales */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #007BFF;
+}
+
+/* Encabezado y navegación */
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+    height: 60px;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-horizontal {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu-horizontal li {
+    margin: 0 10px;
+    position: relative;
+}
+
+.menu-horizontal li a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.menu-horizontal li a:hover {
+    color: #0066cc;
+}
+
+.menu-horizontal li:hover > ul {
+    display: block;
+}
+
+.menu-vertical {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+.menu-vertical li {
+    display: block;
+}
+
+.menu-vertical li a {
+    padding: 10px 15px;
+}
+
+/* Contenido principal */
+
+main {
+    padding: 40px 0;
+}
+
+.hero {
+    background-color: #5d6060;
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.offers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.offer {
+    flex: 1 1 calc(30% - 60px);
+    margin-bottom: 40px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.offer:hover {
+    transform: translateY(-5px);
+}
+
+.offer-image img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #eee;
+}
+
+.offer-details {
+    padding: 20px;
+}
+
+.offer-details h2 {
+    font-size: 1.5em; 
+    color: #5d6060;
+    margin-bottom: 10px;
+}
+
+.offer-details p {
+    font-size: 1em; 
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #5d6060;
+    color: #fff;
+    padding: 8px 16px; 
+    border-radius: 4px;
+    text-align: center;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+/* Footer */
+
+footer {
+    background-color: #777;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #5d6060;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #007BFF;
+}

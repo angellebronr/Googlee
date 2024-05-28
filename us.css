@@ -1,0 +1,182 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #007BFF;
+}
+
+/* Encabezado y navegación */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+    height: 60px;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-horizontal {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu-horizontal li {
+    margin: 0 10px;
+    position: relative;
+}
+
+.menu-horizontal li a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.menu-horizontal li a:hover {
+    color: #0066cc;
+}
+
+.menu-horizontal li:hover > ul {
+    display: block;
+}
+
+.menu-vertical {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+.menu-vertical li {
+    display: block;
+}
+
+.menu-vertical li a {
+    padding: 10px 15px;
+}
+
+/* Secciones del contenido principal */
+main {
+    padding: 80px 0;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-container.reverse {
+    flex-direction: row-reverse;
+}
+
+.text {
+    flex: 1;
+    padding: 20px;
+    max-width: 50%;
+}
+
+.image {
+    flex: 1;
+    padding: 20px;
+    max-width: 50%;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #007BFF;
+    text-align: left;
+}
+
+section p, section ul {
+    font-size: 1.2em;
+    color: #666;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #007BFF;
+}
